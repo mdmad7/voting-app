@@ -5,7 +5,6 @@ import { applyMiddleware,createStore } from 'redux'
 import logger from 'redux-logger'
 import voteApp from './reducers'
 import App from './components/App'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import registerServiceWorker from './registerServiceWorker'
 

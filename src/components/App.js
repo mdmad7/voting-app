@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import logo from '../logo.svg'
 import * as VoteActions from '../actions'
 
+import Results from './Results'
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -50,6 +52,8 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <hr />
+        <Results store={this.props.votes} actions={this.props.actions} />
       </div>
     )
   }
