@@ -35,17 +35,17 @@ class Results extends Component {
   return (
     <div className="container">
       <h3 className="badge badge-danger">Angular: {this.votesAngularInPercent().toFixed(2) + '%'} </h3>
-      <div className="progress active">
+      <div className="progress">
         <div className="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style={{width: `${this.votesAngularInPercent()}%`}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">{this.votesAngularInPercent().toFixed(2)}%</div>
       </div>
       <hr />
       <h3 className="badge badge-info">React: {this.votesReactInPercent().toFixed(2) + '%'} </h3>
-      <div className="progress active">
+      <div className="progress">
         <div className="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style={{width: `${this.votesReactInPercent()}%`}} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">{this.votesReactInPercent().toFixed(2)}%</div>
       </div>
       <hr />
       <h3 className="badge badge-success">Vue JS: {this.votesVuejsInPercent().toFixed(2) + '%'} </h3>
-      <div className="progress active">
+      <div className="progress">
         <div className="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style={{width: `${this.votesVuejsInPercent()}%`}} aria-valuenow={this.votesVuejsInPercent().toFixed(2)}aria-valuemin="0" aria-valuemax="100">{this.votesVuejsInPercent().toFixed(2)}%</div>
       </div>
       <hr />
